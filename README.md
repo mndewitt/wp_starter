@@ -1,5 +1,7 @@
 # wp_starter
-bash script to install WordPress locally in one step, using WP-CLI
+bash script to install WordPress locally in one step, using WP-CLI/
+
+Install WP-CLI using the instructions here: http://wp-cli.org/
 
 If you are using MAMP, add the following lines to your .bash_profile 
 to add mysql and MAMP PHP to your path:
