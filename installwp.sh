@@ -5,7 +5,7 @@ DB_NAME=localwp
 
 SITE_TITLE=dev
 
-URL=localhost/shellpractice
+URL=http://www.wpsandbox.dev
 
 ADMIN_EMAIL=mdewitt07@gmail.com
 
