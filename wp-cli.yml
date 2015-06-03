@@ -1,0 +1,7 @@
+# put your configuration here...
+# http://wp-cli.org/config/
+
+color: true
+
+apache_modules:
+   - mod_rewrite
