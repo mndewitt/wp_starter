@@ -25,10 +25,14 @@ wp plugin install advanced-custom-fields --activate
 wp plugin install bwp-minify --activate
 wp plugin install wordpress-seo --activate
 
-
-#rewrite permalinks for pretty urls
-wp rewrite structure '/%postname%'  --hard
-wp rewrite flush --hard
+#ask if you need any dummy content
+read -p 'Do you want to populate some lorem ipsum posts for this install?' -n 1 -r
+echo    # move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    curl http://loripsum.net/api/5 | wp post generate --post_content --count=25
+    echo '25 lorem ipsum posts have been added'
+fi
 
 #shout out upon completion
 echo 'WordPress successfully installed'
